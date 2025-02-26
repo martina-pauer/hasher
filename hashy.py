@@ -47,13 +47,3 @@ def lista_valida(hash_validador:str, items:list) -> bool:
         Dice si un hash s2hp512 de hasher es valido para una lista
     '''
     return (hash_validador == hash_lista(items))
-
-# Importo modulo para leer comandos
-import sys
-
-# Uso formato nuevo de hasher con argumentos multilpes: ./hashy.py hash_1 hash_2 hash_n
-for hash_n in range(1, int(sys.argv.__len__())):
-    if archivo_valido(hash_n, 'resultado-4.txt'):
-        print(f'El hash "{hash_n.__str__()}" es valido para "resultado-4.txt".\n')
-    else:
-        print(f'El hash "{hash_n.__str__()}" no verifica para "resultado-4.txt".\n')
