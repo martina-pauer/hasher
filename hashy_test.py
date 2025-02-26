@@ -7,14 +7,14 @@ import hashy
 # Uso formato nuevo de hasher con argumentos multilpes: ./hashy_test.py hash_1 hash_2 hash_n
 for hash_n in range(1, int(sys.argv.__len__())):
     # Pruebo archivo valido
-    if hashy.archivo_valido(sys.argv[int(hash_n)].__str__().lower().__str__(), 'resultado_4.txt'):
-        print(f'\nEl hash "{sys.argv[int(hash_n)].__str__()}" es valido para "resultado_4.txt".\n')
+    if hashy.archivo_valido(sys.argv[int(hash_n)].__str__().lower().__str__(), 'test_4.txt'):
+        print(f'\nEl hash "{sys.argv[int(hash_n)].__str__()}" es valido para "test_4.txt".\n')
     else:
-        print(f'\nEl hash "{sys.argv[int(hash_n)].__str__()}" no verifica para "resultado_4.txt".\n')
+        print(f'\nEl hash "{sys.argv[int(hash_n)].__str__()}" no verifica para "test_4.txt".\n')
     # Pruebo lista valida
     if hashy.lista_valida(sys.argv[int(hash_n)].__str__().lower().__str__(), [1, 3, 5]):
         # Pruebo hash de lista
-        print(f'\n\nLa lista [1, 3, 5] es valida y tiene hash: {hahsy.hash_lista([1, 2, 3]).__str__()}.\n')
+        print(f'\n\nLa lista [1, 3, 5] es valida y tiene hash: {hashy.hash_lista([1, 2, 3]).__str__()}.\n')
     else:
         print('La lista [1, 3, 5] no coincide con el hash.\n')
     # Muestro ejemplos de algunos hash de archivo
